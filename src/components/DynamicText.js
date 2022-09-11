@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 const DynamicText = () => {
+
   useEffect(() => {
     const target = document.getElementById("text-target");
     let array = ["simple", "clear", "smart", "strong"];
@@ -39,7 +40,10 @@ const DynamicText = () => {
       }, 80);
     };
     loop();
-  }, []);
+  })
+
+
+  
 
   return (
     <span className="dynamic-text">
