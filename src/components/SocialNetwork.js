@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
-
 const SocialNetwork = () => {
 
     const anim = () => {
-        const icons = document.querySelectorAll(".fab")
+        const icons = document.querySelectorAll(".social-network a")
         
         icons.forEach((link) => {
             link.addEventListener("mouseover", (e) => {
